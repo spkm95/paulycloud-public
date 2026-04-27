@@ -2,15 +2,40 @@
 
 Public scripts and community contributions for Intune & Endpoint Management.
 
-## What's Here
+## Structure
 
-- **Scripts** — PowerShell scripts for Intune, Graph API, and endpoint management automation
-- **Remediations** — Proactive remediation script pairs (detect + remediate)
-- **Templates** — Configuration templates, compliance policy exports, and baselines
+```
+├── macos/
+│   ├── applications/       App deployment scripts
+│   ├── configurations/     Configuration profiles & settings
+│   ├── remediations/       Proactive remediation pairs (detect + remediate)
+│   └── scripts/            Platform scripts & automation
+├── windows/
+│   ├── applications/       App deployment scripts
+│   ├── configurations/     Configuration profiles & settings
+│   ├── remediations/       Proactive remediation pairs (detect + remediate)
+│   ├── reporting/          Reporting & audit scripts
+│   └── scripts/            Platform scripts & automation
+├── ios/
+│   ├── applications/       App deployment scripts
+│   ├── configurations/     Configuration profiles & settings
+│   ├── remediations/       Proactive remediation pairs (detect + remediate)
+│   └── scripts/            Platform scripts & automation
+└── android/
+    ├── applications/       App deployment scripts
+    ├── configurations/     Configuration profiles & settings
+    ├── remediations/       Proactive remediation pairs (detect + remediate)
+    └── scripts/            Platform scripts & automation
+```
 
 ## Contributing
 
 Contributions are welcome! Feel free to open a PR or issue.
+
+## Author
+
+**Simon Pauly Kofoed Mose**
+[paulycloud.com](https://paulycloud.com)
 
 ## License
 
