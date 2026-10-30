@@ -26,14 +26,13 @@ Create the target enrollment policy in Intune before running the script.
 
 ```powershell
 # Preview the selection without assigning devices.
-& '.\Get-AppleEnrollmentMigrationCandidates.ps1' -TenantId 'contoso.onmicrosoft.com' -WhatIf
+& '.\Get-AppleEnrollmentMigrationCandidates.ps1' -WhatIf
 
 # Assign after reviewing the confirmation prompt.
-& '.\Get-AppleEnrollmentMigrationCandidates.ps1' -TenantId 'contoso.onmicrosoft.com'
+& '.\Get-AppleEnrollmentMigrationCandidates.ps1'
 ```
 
-The tenant argument is optional. Token, platform, source, and target policy
-selection are interactive.
+Sign-in and token, platform, source, and target policy selection are interactive.
 
 `-BatchSize` defaults to 100 and accepts 1-1000. After assignment, the script
 polls Intune every five seconds for up to 120 seconds by default. Set
